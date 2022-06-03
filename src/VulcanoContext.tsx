@@ -1,19 +1,23 @@
 import React, { createContext, useContext, ReactNode } from 'react'
 
-const VulcanoContext = createContext({ user: { profile: { locale: '', hasBasicInfo: false, entityType: '', name: '', email: '', id: 0 } } })
+const VulcanoContext = createContext({
+  user: { profile: { locale: '', hasBasicInfo: false, entityType: '', name: '', email: '', id: 0 } }
+})
 
 export const useVulcanoContext = () => useContext(VulcanoContext)
 
 interface IPropTypes {
-  user: any,
+  user: any
   children: ReactNode
 }
 
 const VulcanoProvider = ({ user, children }: IPropTypes) => {
   return (
-    <VulcanoContext.Provider value={{
-      user
-    }}>
+    <VulcanoContext.Provider
+      value={{
+        user
+      }}
+    >
       {children}
     </VulcanoContext.Provider>
   )

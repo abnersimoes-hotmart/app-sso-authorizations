@@ -12,9 +12,6 @@ const environmentVars = [
   'API_ABTEST',
   'API_LANGUAGES',
   'APP_PLATFORM',
-  'API_MARKET',
-  'API_ACCOUNT_CONTROL',
-  'API_AFFILIATION',
   'CAS_CLIENT_ID',
   'IS_CAS'
 ]

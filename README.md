@@ -4,16 +4,13 @@
 
 ## Installation
 
-* Download and Install [Git](http://git-scm.com);
-* Download and Install [NodeJS - npm](http://nodejs.org);
-* Create on the root of project a `.env` file with the fields:
+- Download and Install [Git](http://git-scm.com);
+- Download and Install [NodeJS - npm](http://nodejs.org);
+- Create on the root of project a `.env` file with the fields:
+
 ```
 PRODUCTION=false
 API_LANGUAGES=
-API_MARKETPLACE=
-API_ACCOUNT_CONTROL=
-API_MARKET=
-API_AFFILIATION=
 APP_PLATFORM=
 SECURITY_BASE_URL=
 SECURITY_USERNAME=
@@ -37,8 +34,7 @@ Downloading labels in api-languages:
 npm run local-lang
 ```
 
-_The labels are downloaded automatically, when the application is started_
-_Remember to log in on the VPN to get access to api-languages_
+_The labels are downloaded automatically, when the application is started_ _Remember to log in on the VPN to get access to api-languages_
 
 Starting on development mode:
 
@@ -68,8 +64,7 @@ npm run build
 
 ## Commits and PR's
 
-Commits and Pull requests, preferably, is written in English with a concise message.
-WIP, emojis, etc is not good to legibility, help us keep this project better <3
+Commits and Pull requests, preferably, is written in English with a concise message. WIP, emojis, etc is not good to legibility, help us keep this project better <3
 
 ## Strucutre
 
@@ -90,19 +85,17 @@ WIP, emojis, etc is not good to legibility, help us keep this project better <3
   - utils -> _Utilities used all over app_.
 
 ## Dependencies you should know about
-  - @hotmart/cosmos;
-  - @hotmart/request;
-  - i18next;
-  - react-redux;
-  - react-router-dom;
-  - redux;
-  - redux-actions;
-  - redux-persist;
-  - redux-thunk;
-  - yup.
+
+- @hotmart/cosmos;
+- @hotmart/request;
+- i18next;
+- react-router-dom;
+- yup.
 
 ## Drone URL
+
 https://drone.vulcano.hotmart.com/Hotmart-Org/app-market
 
 ## Copyright
+
 Hotmart &copy; 2020

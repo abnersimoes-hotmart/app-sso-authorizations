@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import { IUser } from 'utils/interfaces/userInformation'
 
-const vulcanoBaseName = window.location.pathname.match(/(.*market)/g)
+const vulcanoBaseName = window.location.pathname.match(/(.*accounts\/settings)/g)
 const App = lazy(() => import('./App'))
 
 interface IPropTypes {

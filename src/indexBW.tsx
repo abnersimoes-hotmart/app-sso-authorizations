@@ -33,7 +33,7 @@ const setToken = token => {
   }
 }
 
-const vulcanoBaseName = window.location.pathname.match(/(.*market)/g)
+const vulcanoBaseName = window.location.pathname.match(/(.*accounts\/settings)/g)
 
 const App = ({ user }: any) => {
   const { token, language = 'en' } = user
