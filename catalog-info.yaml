@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: app-market
+  description: Micro Front-end responsável pela exibição do Mercado de Afiliados.
+  tags: []
+  annotations:
+    github.com/project-slug: Hotmart-Org/app-market
+spec:
+  type: website
+  lifecycle: production
+  owner: partners_affiliation_team
+  system: affiliate_program
+  heimdall:
+    reportable: false
+    pci: false
+    products:
+    - Affiliate Program
+    squads:
+    - Affiliate Program
+    impact: ''

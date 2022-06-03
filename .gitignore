@@ -1,0 +1,28 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# auth keys
+.npmrc
+
+# dependencies
+/node_modules
+/src/language/*
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+/config/jest/coverage
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+.env
+.idea
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

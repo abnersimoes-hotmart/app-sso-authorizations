@@ -1,0 +1,31 @@
+.alert-card {
+  overflow: hidden;
+
+  &__icon {
+    min-width: 3rem;
+    min-height: 3rem;
+    max-width: 3rem;
+    max-height: 3rem;
+    border-radius: 50%;
+  }
+
+  &__bar {
+    top: 0;
+    left: 0;
+    width: 0.25rem;
+    background-color: var(--primary);
+  }
+
+  &__close {
+    top: 0.25rem;
+    right: 0.25rem;
+  }
+
+  &__link:hover {
+    text-decoration: none;
+  }
+
+  &__access:hover {
+    text-decoration: underline;
+  }
+}

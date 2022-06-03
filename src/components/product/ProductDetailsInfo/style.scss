@@ -1,0 +1,119 @@
+.commission-modal-header {
+  border-bottom: 0.0625rem solid var(--gray-200);
+}
+
+.hot-modal__dialog {
+  max-height: 37.5rem !important;
+}
+
+.modal-body-table {
+  overflow: scroll;
+}
+
+.product-card-details {
+  height: 22rem;
+  max-height: 22rem;
+  border-bottom: 0.0625rem solid var(--gray-200);
+  @media screen and (max-width: 48rem) {
+    height: 12rem;
+  }
+  &:hover {
+    box-shadow: none;
+  }
+  .product-card-header {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem !important;
+    max-height: 22rem;
+    @media screen and (max-width: 48rem) {
+      max-height: 12rem;
+    }
+
+    .product-image-background {
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      filter: blur(0.4375rem);
+      width: 100%;
+
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+      }
+    }
+
+    .product-image {
+      position: absolute;
+      object-fit: cover;
+      max-height: 22rem;
+      height: 22rem;
+      @media screen and (max-width: 48rem) {
+        max-height: 12rem;
+      }
+    }
+  }
+}
+
+.details-collapse {
+  max-width: 20% !important;
+  padding: 0 !important;
+}
+
+.product-commission {
+  z-index: 1;
+  position: relative;
+}
+
+.details-button {
+  background: none;
+  border: none;
+  color: var(--primary);
+  &:hover {
+    color: var(--primary-dark);
+    background: none;
+    cursor: pointer;
+  }
+}
+
+.buy-product {
+  width: 95%;
+  max-width: 95%;
+  border-radius: none;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border: 0.0625rem solid var(--gray-200);
+  border-top: none !important;
+}
+
+.price-and-commission {
+  border-top: 0.0625rem solid var(--gray-200);
+  .price {
+    border-right: 0.0625rem solid var(--gray-200);
+  }
+}
+
+.product-information {
+  border: 0.0625rem solid var(--gray-200);
+  border-radius: 0.3125rem;
+
+  .favorite-dropdown-card__button {
+    @media screen and (min-width: 48.0625rem) {
+      top: var(--spacer-4);
+      right: var(--spacer-4);
+    }
+  }
+}
+
+.go-back-button {
+  max-width: 40%;
+  background-color: transparent !important;
+}
+
+.card-footer-mobile {
+  border-top: 0.025rem solid var(--gray-200) !important;
+  max-width: 100% !important;
+}

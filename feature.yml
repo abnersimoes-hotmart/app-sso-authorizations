@@ -1,0 +1,32 @@
+name: app-market
+
+containerPort: 8080
+cpu: 0.4
+memory: 512M
+
+replicaCount: 1
+
+branchRelease: true
+branchReleaseCollapseTime: 15
+healthCheckPath: /health
+preStopTime: 30
+timeoutSeconds: 5
+successThreshold: 3
+failureThreshold: 5
+
+env:
+  NODE_ENV: production
+  PROFILE: feature
+
+lb:
+  type: nginx
+  hosts:
+    - host: app-market.buildstaging.com
+      paths: ["/"]
+
+podAnnotations:
+  linkerd.io/inject: enabled
+
+infra:
+  kms:
+    enable: false

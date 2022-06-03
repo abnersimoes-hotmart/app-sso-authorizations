@@ -1,0 +1,15 @@
+.i-am-affiliate {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.page-containers {
+  padding: 0 6rem !important;
+  @media screen and (max-width: 50rem) and (min-width: 38rem) {
+    padding: 0 3rem!important;
+  }
+
+  @media screen and (max-width: 37.9rem) {
+    padding: 0 0.75rem !important;
+  }
+}

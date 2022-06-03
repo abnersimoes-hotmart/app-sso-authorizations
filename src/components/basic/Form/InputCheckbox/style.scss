@@ -1,0 +1,3 @@
+.hot-custom-checkbox .hot-custom-control__input:disabled:checked ~ .hot-custom-control__label::before {
+  background-color: var(--primary-light);
+}

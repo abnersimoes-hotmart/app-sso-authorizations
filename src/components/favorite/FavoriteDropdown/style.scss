@@ -1,0 +1,13 @@
+.favorite-dropdown {
+  top: calc(100% + 0.75rem);
+  right: 0;
+  width: 23.25rem;
+  z-index: 1040;
+  box-shadow: var(--box-shadow-sm);
+
+  @media screen and (max-width: 48rem) {
+    width: 100%;
+    left: 0;
+    height: auto;
+  }
+}
