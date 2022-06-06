@@ -20,7 +20,6 @@ module.exports = {
     '^config(.*)$': '<rootDir>/src/config$1',
     '^context(.*)$': '<rootDir>/src/context$1',
     '^hooks(.*)$': '<rootDir>/src/hooks$1',
-    '^pages(.*)$': '<rootDir>/src/pages$1',
     '^utils(.*)$': '<rootDir>/src/utils$1',
     '^root(.*)$': '<rootDir>$1'
   },

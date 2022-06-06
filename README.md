@@ -79,7 +79,6 @@ Commits and Pull requests, preferably, is written in English with a concise mess
   - context -> _Contains React context API files of application_;
   - hooks -> _Custom hooks files_;
   - languages -> _i18n files_;
-  - pages -> _Routes_;
   - services -> _Functions to isolate the requests calls from components_;
   - startup -> _Components necessary to start the application_;
   - typings -> _TypeScript consts, interfaces and types_;

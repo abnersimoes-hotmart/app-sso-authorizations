@@ -12,7 +12,6 @@ module.exports = {
   CONFIG: path.resolve(__dirname, '../../src/config'),
   CONTEXT: path.resolve(__dirname, '../../src/context'),
   CUSTOM_HOOKS: path.resolve(__dirname, '../../src/hooks'),
-  PAGES: path.resolve(__dirname, '../../src/pages'),
   HELPERS: path.resolve(__dirname, '../../src/helpers'),
   SERVICES: path.resolve(__dirname, '../../src/services'),
   STARTUP: path.resolve(__dirname, '../../src/startup'),

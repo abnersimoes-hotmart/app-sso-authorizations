@@ -1,9 +1,0 @@
-.accordion-collapse {
-  border: 0.0625rem solid var(--input-border-color);
-  border-radius: var(--border-radius);
-  &--overflow {
-    overflow-y: scroll;
-    overflow-x: none;
-    max-height: 40vh;
-  }
-}

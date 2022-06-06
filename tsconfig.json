@@ -28,7 +28,6 @@
       "services/*": ["src/services/*"],
       "helpers/*": ["src/helpers/*"],
       "hooks/*": ["src/hooks/*"],
-      "pages/*": ["src/pages/*"],
       "root/*": ["./"]
     }
   },

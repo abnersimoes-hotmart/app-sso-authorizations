@@ -99,7 +99,6 @@ module.exports = {
       context: paths.CONTEXT,
       hooks: paths.CUSTOM_HOOKS,
       helpers: paths.HELPERS,
-      pages: paths.PAGES,
       services: paths.SERVICES,
       startup: paths.STARTUP,
       utils: paths.UTILS,
