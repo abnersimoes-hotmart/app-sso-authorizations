@@ -89,7 +89,6 @@
     "@fortawesome/fontawesome-pro": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@hotmart/cosmos": "^3.8.18",
-    "@hotmart/request": "^1.0.6",
     "@types/react": "^17.0.34",
     "@types/react-dom": "^17.0.11",
     "dayjs": "^1.10.6",

@@ -6,5 +6,4 @@ export interface IUser {
     locale: string
     ucode: string
   }
-  isFromBrazil?: boolean
 }

@@ -1,12 +1,9 @@
 import React, { useEffect } from 'react'
-
-import VulcanoProvider from 'src/VulcanoContext'
+import VulcanoProvider from 'context/VulcanoContext'
 import { Button } from 'components/basic'
-import { initRequestConfiguration } from 'utils/request'
-import { IUser } from 'utils/interfaces/userInformation'
-
+import { IUser } from 'utils/interfaces/user.interface'
+import { useConsents } from 'context/ConsentsContext'
 import '../cosmos'
-import useConsents from 'hooks/useConsents'
 
 interface IPropTypes {
   user: IUser
@@ -15,24 +12,18 @@ interface IPropTypes {
 const App = ({ user }: IPropTypes) => {
   const { consents, getConsents, isConsentsLoading } = useConsents()
   const {
-    token,
     profile: { ucode }
   } = user
 
   useEffect(() => {
     getConsents(ucode)
-    // getSsoConsents(ucode).then((res: unknown) => console.log(res))
-  }, [ucode])
+  }, [ucode, getConsents])
 
   useEffect(() => {
     if (!isConsentsLoading) {
       console.log({ consents })
     }
   }, [isConsentsLoading, consents])
-
-  useEffect(() => {
-    initRequestConfiguration(token)
-  }, [token])
 
   return (
     <VulcanoProvider user={user}>

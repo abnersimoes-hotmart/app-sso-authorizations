@@ -1,13 +1,8 @@
 import React, { useEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
-
-import 'config/requestRegister'
 import 'assets/font-icons'
-
-import i18n, { i18nInit } from 'src/config/i18n'
-import { initRequestConfiguration } from 'utils/request'
+import i18n, { i18nInit } from 'config/i18n'
 import { saveOnStorage } from 'utils/storage'
-
 import Main from './startup/App'
 
 function normalizeInitials(initials) {
@@ -40,7 +35,6 @@ const App = ({ user }: any) => {
 
   useEffect(() => {
     setToken(token)
-    initRequestConfiguration(token)
 
     const init = async language => {
       await i18nInit(language)

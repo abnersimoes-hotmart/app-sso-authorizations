@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { useVulcanoContext } from 'src/VulcanoContext'
+import { useVulcanoContext } from 'context/VulcanoContext'
 import { Loader } from 'components/basic'
 import '../style.scss'
 

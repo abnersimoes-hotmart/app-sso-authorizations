@@ -1,15 +1,11 @@
 /* global ACCESS_TOKEN */
 import React from 'react'
 import ReactDOM from 'react-dom'
-
+import 'assets/font-icons'
 import i18n, { i18nInit } from 'config/i18n'
 import { saveOnStorage } from 'utils/storage'
-
 import startCas from './auth-cas'
 import Root from './startup/Root'
-
-import 'config/requestRegister'
-import 'assets/font-icons'
 import ssoApi from './api/sso'
 import { setHeaderToken } from './api'
 
@@ -80,15 +76,12 @@ const start = (): Promise<string> => {
 if (process.env.NODE_ENV === 'development') {
   const params = {
     user: {
-      isFromBrazil: false,
       token,
       profile: {
         name: 'Usuário Lindinho',
         locale: 'PT_BR',
-        hasBasicInfo: true,
-        entityType: 'LEGAL_ENTITY',
-        id: 3234184,
-        ucode: '0effcaff-aadf-4cc9-be2b-1096625d9bc0'
+        id: 12744211,
+        ucode: 'c9c9c3db-d3b9-467e-9d41-2d59feb1fa1f'
       }
     }
   }

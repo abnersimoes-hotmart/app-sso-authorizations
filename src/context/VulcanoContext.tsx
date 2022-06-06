@@ -1,7 +1,7 @@
 import React, { createContext, useContext, ReactNode } from 'react'
 
 const VulcanoContext = createContext({
-  user: { profile: { locale: '', hasBasicInfo: false, entityType: '', name: '', email: '', id: 0 } }
+  user: { profile: { locale: '', name: '', email: '', id: 0 } }
 })
 
 export const useVulcanoContext = () => useContext(VulcanoContext)

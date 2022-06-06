@@ -1,4 +1,4 @@
-# Affiliation Market :convenience_store:
+# SSO Consents :convenience_store:
 
 [![JS Hotmart Style](https://img.shields.io/badge/code%20style-hotmart-F04E23.svg)](https://www.npmjs.com/package/eslint-config-hotmart)
 
@@ -72,11 +72,12 @@ Commits and Pull requests, preferably, is written in English with a concise mess
 - config -> _Configuration files of webpack, jest, languages, etc._;
 - public -> _Folder to public files as index.html, favicon, etc._;
 - src -> _Folder that contains all code_;
+  - api -> _Folder that contains API config files_;
   - assets -> _Folder that contains icons, fonts, images, etc_;
   - components -> _Contains the components without or with a little intelligence_;
   - config -> _Contains configuration of some elements of application_;
+  - context -> _Contains React context API files of application_;
   - hooks -> _Custom hooks files_;
-  - ducks -> _Actions/reducers_;
   - languages -> _i18n files_;
   - pages -> _Routes_;
   - services -> _Functions to isolate the requests calls from components_;
@@ -87,15 +88,13 @@ Commits and Pull requests, preferably, is written in English with a concise mess
 ## Dependencies you should know about
 
 - @hotmart/cosmos;
-- @hotmart/request;
 - i18next;
 - react-router-dom;
-- yup.
 
 ## Drone URL
 
-https://drone.vulcano.hotmart.com/Hotmart-Org/app-market
+https://drone.vulcano.hotmart.com/Hotmart-Org/app-sso-consents
 
 ## Copyright
 
-Hotmart &copy; 2020
+Hotmart &copy; 2022

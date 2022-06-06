@@ -23,10 +23,10 @@
       "api/*": ["src/api/*"],
       "config/*": ["src/config/*"],
       "components/*": ["src/components/*"],
+      "context/*": ["src/context/*"],
       "utils/*": ["src/utils/*"],
-      "ducks/*": ["src/ducks/*"],
       "services/*": ["src/services/*"],
-      "state/*": ["src/state/*"],
+      "helpers/*": ["src/helpers/*"],
       "hooks/*": ["src/hooks/*"],
       "pages/*": ["src/pages/*"],
       "root/*": ["./"]
