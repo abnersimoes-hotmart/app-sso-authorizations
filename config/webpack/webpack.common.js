@@ -12,6 +12,7 @@ const environmentVars = [
   'API_ABTEST',
   'API_LANGUAGES',
   'APP_PLATFORM',
+  'API_SSO',
   'CAS_CLIENT_ID',
   'IS_CAS'
 ]
@@ -96,11 +97,12 @@ module.exports = {
       components: paths.COMPONENTS,
       config: paths.CONFIG,
       containers: paths.CONTAINERS,
-      'custom-hooks': paths.CUSTOM_HOOKS,
+      hooks: paths.CUSTOM_HOOKS,
       ducks: paths.DUCKS,
       helpers: paths.HELPERS,
       pages: paths.PAGES,
       services: paths.SERVICES,
+      state: paths.STATE,
       startup: paths.STARTUP,
       utils: paths.UTILS,
       '@cosmos': paths.COSMOS

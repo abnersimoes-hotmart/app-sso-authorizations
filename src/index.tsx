@@ -10,6 +10,8 @@ import Root from './startup/Root'
 
 import 'config/requestRegister'
 import 'assets/font-icons'
+import ssoApi from './api/sso'
+import { setHeaderToken } from './api'
 
 const defaultLanguage = 'pt_BR'
 
@@ -22,6 +24,7 @@ const setLanguage = async language => {
 
 const setToken = token => {
   if (token) {
+    setHeaderToken(ssoApi, `Bearer ${token}`)
     saveOnStorage('token', token)
   }
 }
@@ -57,6 +60,7 @@ const render = async (rootElement, { user, baseUrl = '/' }) => {
 
   ReactDOM.render(<Root user={user} />, shadowRoot, () => renderCallBack(rootElement))
 }
+
 const start = (): Promise<string> => {
   if (process.env.IS_CAS === 'true') {
     return new Promise((resolve, reject) => {
@@ -83,7 +87,8 @@ if (process.env.NODE_ENV === 'development') {
         locale: 'PT_BR',
         hasBasicInfo: true,
         entityType: 'LEGAL_ENTITY',
-        id: 3234184
+        id: 3234184,
+        ucode: '0effcaff-aadf-4cc9-be2b-1096625d9bc0'
       }
     }
   }

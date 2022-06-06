@@ -26,7 +26,8 @@
       "utils/*": ["src/utils/*"],
       "ducks/*": ["src/ducks/*"],
       "services/*": ["src/services/*"],
-      "custom-hooks/*": ["src/custom-hooks/*"],
+      "state/*": ["src/state/*"],
+      "hooks/*": ["src/hooks/*"],
       "pages/*": ["src/pages/*"],
       "root/*": ["./"]
     }

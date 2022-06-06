@@ -75,7 +75,7 @@ Commits and Pull requests, preferably, is written in English with a concise mess
   - assets -> _Folder that contains icons, fonts, images, etc_;
   - components -> _Contains the components without or with a little intelligence_;
   - config -> _Contains configuration of some elements of application_;
-  - custom-hooks -> _Custom hooks files_;
+  - hooks -> _Custom hooks files_;
   - ducks -> _Actions/reducers_;
   - languages -> _i18n files_;
   - pages -> _Routes_;

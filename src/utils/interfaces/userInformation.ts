@@ -1,10 +1,10 @@
 export interface IUser {
-  token,
+  token: string
   profile: {
-    id: number,
-    name: string,
-    locale: string,
+    id: number
+    name: string
+    locale: string
+    ucode: string
   }
   isFromBrazil?: boolean
 }
-
