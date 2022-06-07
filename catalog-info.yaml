@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: app-market
+  name: app-sso-consents
   description: Micro Front-end responsável pela exibição do Mercado de Afiliados.
   tags: []
   annotations:
-    github.com/project-slug: Hotmart-Org/app-market
+    github.com/project-slug: Hotmart-Org/app-sso-consents
 spec:
   type: website
   lifecycle: production
@@ -15,7 +15,7 @@ spec:
     reportable: false
     pci: false
     products:
-    - Affiliate Program
+      - Affiliate Program
     squads:
-    - Affiliate Program
+      - Affiliate Program
     impact: ''

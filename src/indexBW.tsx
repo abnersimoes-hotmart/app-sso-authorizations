@@ -46,7 +46,7 @@ const App = ({ user }: any) => {
 
   return (
     <BrowserRouter basename={vulcanoBaseName ? vulcanoBaseName[0] : ''}>
-      <Main user={user} />
+      <Main />
     </BrowserRouter>
   )
 }

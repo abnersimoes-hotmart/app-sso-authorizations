@@ -11,7 +11,7 @@ module.exports = merge(common, {
   output: {
     filename: 'bundle.js',
     path: path.resolve(paths.BUILD),
-    library: '@hotmart/app-market',
+    library: '@hotmart/app-sso-consents',
     libraryTarget: 'umd',
     publicPath: `${process.env.APP_URL}/`,
     chunkFilename: '[name].[contenthash].js'

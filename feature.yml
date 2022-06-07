@@ -1,4 +1,4 @@
-name: app-market
+name: app-sso-consents
 
 containerPort: 8080
 cpu: 0.4
@@ -21,8 +21,8 @@ env:
 lb:
   type: nginx
   hosts:
-    - host: app-market.buildstaging.com
-      paths: ["/"]
+    - host: app-sso-consents.buildstaging.com
+      paths: ['/']
 
 podAnnotations:
   linkerd.io/inject: enabled

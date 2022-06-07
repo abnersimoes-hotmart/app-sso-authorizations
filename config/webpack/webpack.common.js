@@ -6,16 +6,7 @@ const ModuleFederationPlugin = webpack.container.ModuleFederationPlugin
 const paths = require('./paths.js')
 const pkjson = require('../../package.json')
 
-const environmentVars = [
-  'PRODUCTION',
-  'APP_URL',
-  'API_ABTEST',
-  'API_LANGUAGES',
-  'APP_PLATFORM',
-  'API_SSO',
-  'CAS_CLIENT_ID',
-  'IS_CAS'
-]
+const environmentVars = ['PRODUCTION', 'APP_URL', 'API_LANGUAGES', 'APP_PLATFORM', 'API_SSO', 'CAS_CLIENT_ID', 'IS_CAS']
 
 module.exports = {
   module: {
@@ -56,7 +47,7 @@ module.exports = {
      */
     new webpack.EnvironmentPlugin(environmentVars),
     new ModuleFederationPlugin({
-      name: 'market',
+      name: 'sso_consents',
       filename: 'remoteEntry.js',
       exposes: {
         './App': './src/indexBW.tsx'
@@ -114,7 +105,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(paths.ROOT),
-    library: '@hotmart/app-market',
+    library: '@hotmart/app-sso-consents',
     libraryTarget: 'umd',
     clean: true
   }

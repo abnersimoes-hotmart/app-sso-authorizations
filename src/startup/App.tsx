@@ -1,15 +1,11 @@
 import React, { useEffect } from 'react'
-import VulcanoProvider from 'context/VulcanoContext'
-import { IUser } from 'utils/interfaces/user.interface'
 import { useConsents } from 'context/ConsentsContext'
+import { useVulcanoContext } from 'context/VulcanoContext'
 import '../cosmos'
 
-interface IPropTypes {
-  user: IUser
-}
-
-const App = ({ user }: IPropTypes) => {
+const App = () => {
   const { consents, getConsents, isConsentsLoading } = useConsents()
+  const { user } = useVulcanoContext()
   const { profile } = user
 
   useEffect(() => {
@@ -17,7 +13,7 @@ const App = ({ user }: IPropTypes) => {
   }, [profile.ucode, getConsents])
 
   return (
-    <VulcanoProvider user={user}>
+    <>
       {isConsentsLoading ? (
         <hot-loading />
       ) : (
@@ -28,7 +24,7 @@ const App = ({ user }: IPropTypes) => {
           </div>
         ))
       )}
-    </VulcanoProvider>
+    </>
   )
 }
 

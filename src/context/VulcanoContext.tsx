@@ -1,13 +1,14 @@
 import React, { createContext, useContext, ReactNode } from 'react'
+import { IUser } from 'utils/interfaces/user.interface'
 
 const VulcanoContext = createContext({
-  user: { profile: { locale: '', name: '', email: '', id: 0 } }
+  user: { token: '', profile: { id: 0, locale: '', name: '', ucode: '' } }
 })
 
 export const useVulcanoContext = () => useContext(VulcanoContext)
 
 interface IPropTypes {
-  user: any
+  user: IUser
   children: ReactNode
 }
 
