@@ -27,7 +27,6 @@
       "utils/*": ["src/utils/*"],
       "services/*": ["src/services/*"],
       "helpers/*": ["src/helpers/*"],
-      "hooks/*": ["src/hooks/*"],
       "root/*": ["./"]
     }
   },

@@ -28,7 +28,7 @@ function cssWrap(string, options) {
 }
 
 module.exports = function (css, style) {
-  var vulcanoMain = document.querySelector('.my-shadow-root')
+  var vulcanoMain = document.querySelector('.app-sso-consents-root')
   var bwEnvironment = document.getElementById('business-workspace')
 
   if (vulcanoMain && !bwEnvironment) {

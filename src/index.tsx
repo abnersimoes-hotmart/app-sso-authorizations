@@ -28,7 +28,7 @@ const setToken = token => {
 const creatingShadowDom = rootElement => {
   if (rootElement) {
     !rootElement.shadowRoot && rootElement.attachShadow({ mode: 'open' })
-    rootElement.classList.add('my-shadow-root', '_d-none')
+    rootElement.classList.add('app-sso-consents-root', '_d-none')
   }
 }
 

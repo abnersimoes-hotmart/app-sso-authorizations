@@ -19,7 +19,6 @@ module.exports = {
     '^components(.*)$': '<rootDir>/src/components$1',
     '^config(.*)$': '<rootDir>/src/config$1',
     '^context(.*)$': '<rootDir>/src/context$1',
-    '^hooks(.*)$': '<rootDir>/src/hooks$1',
     '^utils(.*)$': '<rootDir>/src/utils$1',
     '^root(.*)$': '<rootDir>$1'
   },

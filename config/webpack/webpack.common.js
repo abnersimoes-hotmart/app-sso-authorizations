@@ -88,7 +88,6 @@ module.exports = {
       components: paths.COMPONENTS,
       config: paths.CONFIG,
       context: paths.CONTEXT,
-      hooks: paths.CUSTOM_HOOKS,
       helpers: paths.HELPERS,
       services: paths.SERVICES,
       startup: paths.STARTUP,
